@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15263" started-at="2021-06-23T16:37:16 IST" finished-at="2021-06-23T16:37:31 IST">
+  <suite name="Default suite" duration-ms="20407" started-at="2021-06-24T16:11:00 IST" finished-at="2021-06-24T16:11:21 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15263" started-at="2021-06-23T16:37:16 IST" finished-at="2021-06-23T16:37:31 IST">
+    <test name="Default test" duration-ms="20407" started-at="2021-06-24T16:11:00 IST" finished-at="2021-06-24T16:11:21 IST">
       <class name="TestCases.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.LoginTest@4493d195]" name="setUp" is-config="true" duration-ms="3239" started-at="2021-06-23T16:37:16 IST" finished-at="2021-06-23T16:37:19 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.LoginTest@3043fe0e]" name="setUp" is-config="true" duration-ms="10126" started-at="2021-06-24T16:11:00 IST" finished-at="2021-06-24T16:11:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="openPage()[pri:0, instance:TestCases.LoginTest@4493d195]" name="openPage" is-config="true" duration-ms="4049" started-at="2021-06-23T16:37:19 IST" finished-at="2021-06-23T16:37:23 IST">
+        <test-method status="PASS" signature="openPage()[pri:0, instance:TestCases.LoginTest@3043fe0e]" name="openPage" is-config="true" duration-ms="3775" started-at="2021-06-24T16:11:11 IST" finished-at="2021-06-24T16:11:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method status="FAIL" signature="verifyLoginWithValidCred()[pri:0, instance:TestCases.LoginTest@4493d195]" name="verifyLoginWithValidCred" duration-ms="4740" started-at="2021-06-23T16:37:23 IST" finished-at="2021-06-23T16:37:28 IST">
+        <test-method status="FAIL" signature="verifyLoginWithValidCred()[pri:0, instance:TestCases.LoginTest@3043fe0e]" name="verifyLoginWithValidCred" duration-ms="4639" started-at="2021-06-24T16:11:14 IST" finished-at="2021-06-24T16:11:19 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -62,7 +62,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCred -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.LoginTest@4493d195]" name="tearDown" is-config="true" duration-ms="2460" started-at="2021-06-23T16:37:29 IST" finished-at="2021-06-23T16:37:31 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.LoginTest@3043fe0e]" name="tearDown" is-config="true" duration-ms="1291" started-at="2021-06-24T16:11:19 IST" finished-at="2021-06-24T16:11:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
