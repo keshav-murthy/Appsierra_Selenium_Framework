@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Appsierra session]" guice-stage="DEVELOPMENT">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Appsierra session]" parallel="methods">
   <listeners>
     <listener class-name="listener.ExtentReporterNG"/>
     <listener class-name="listener.ListenerTest"/>
   </listeners>
-  <test thread-count="5" name="Login(failed)">
+  <test thread-count="2" name="Login(failed)" parallel="methods">
     <classes>
       <class name="TestCases.LoginTest">
         <methods>
           <include name="setUp"/>
-          <include name="verifyLoginWithValidCred"/>
           <include name="tearDown"/>
+          <include name="verifySectionHeadings"/>
           <include name="openPage"/>
         </methods>
       </class> <!-- TestCases.LoginTest -->

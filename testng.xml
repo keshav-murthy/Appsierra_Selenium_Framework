@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Appsierra session">
+<suite name="Appsierra session" parallel="tests" thread-count="2">
 
 	<listeners>
 		<listener class-name="listener.ExtentReporterNG" />
@@ -9,6 +9,12 @@
 	<test name="Login">
 		<classes>
 			<class name="TestCases.LoginTest" />
+		</classes>
+	</test>
+	
+	<test name="Sections">
+		<classes>
+			<class name="TestCases.SectionsVerification" />
 		</classes>
 	</test>
 </suite>
