@@ -2,48 +2,48 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Appsierra session" duration-ms="19767" started-at="2021-06-29T18:38:18 IST" finished-at="2021-06-29T18:38:38 IST">
+  <suite name="Appsierra session" duration-ms="25092" started-at="2021-07-13T12:45:25 IST" finished-at="2021-07-13T12:45:50 IST">
     <groups>
     </groups>
-    <test name="Sections" duration-ms="16433" started-at="2021-06-29T18:38:18 IST" finished-at="2021-06-29T18:38:34 IST">
-      <class name="TestCases.SectionsVerification">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.SectionsVerification@37f1104d]" name="setUp" is-config="true" duration-ms="4578" started-at="2021-06-29T18:38:18 IST" finished-at="2021-06-29T18:38:22 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="openPage()[pri:0, instance:TestCases.SectionsVerification@37f1104d]" name="openPage" is-config="true" duration-ms="4764" started-at="2021-06-29T18:38:22 IST" finished-at="2021-06-29T18:38:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openPage -->
-        <test-method status="PASS" signature="verifySectionHeadings()[pri:0, instance:TestCases.SectionsVerification@37f1104d]" name="verifySectionHeadings" duration-ms="5481" started-at="2021-06-29T18:38:27 IST" finished-at="2021-06-29T18:38:33 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySectionHeadings -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.SectionsVerification@37f1104d]" name="tearDown" is-config="true" duration-ms="1529" started-at="2021-06-29T18:38:33 IST" finished-at="2021-06-29T18:38:34 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestCases.SectionsVerification -->
-    </test> <!-- Sections -->
-    <test name="Login" duration-ms="19767" started-at="2021-06-29T18:38:18 IST" finished-at="2021-06-29T18:38:38 IST">
+    <test name="Login" duration-ms="14913" started-at="2021-07-13T12:45:25 IST" finished-at="2021-07-13T12:45:40 IST">
       <class name="TestCases.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.LoginTest@31f9b85e]" name="setUp" is-config="true" duration-ms="4614" started-at="2021-06-29T18:38:18 IST" finished-at="2021-06-29T18:38:22 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.LoginTest@31f9b85e]" name="setUp" is-config="true" duration-ms="4107" started-at="2021-07-13T12:45:25 IST" finished-at="2021-07-13T12:45:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="openPage()[pri:0, instance:TestCases.LoginTest@31f9b85e]" name="openPage" is-config="true" duration-ms="7029" started-at="2021-06-29T18:38:22 IST" finished-at="2021-06-29T18:38:29 IST">
+        <test-method status="PASS" signature="openPage()[pri:0, instance:TestCases.LoginTest@31f9b85e]" name="openPage" is-config="true" duration-ms="3916" started-at="2021-07-13T12:45:29 IST" finished-at="2021-07-13T12:45:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method status="PASS" signature="verifyLoginWithValidCred()[pri:0, instance:TestCases.LoginTest@31f9b85e]" name="verifyLoginWithValidCred" duration-ms="6845" started-at="2021-06-29T18:38:29 IST" finished-at="2021-06-29T18:38:36 IST">
+        <test-method status="PASS" signature="verifyLoginWithValidCred()[pri:0, instance:TestCases.LoginTest@31f9b85e]" name="verifyLoginWithValidCred" duration-ms="5207" started-at="2021-07-13T12:45:33 IST" finished-at="2021-07-13T12:45:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCred -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.LoginTest@31f9b85e]" name="tearDown" is-config="true" duration-ms="1218" started-at="2021-06-29T18:38:36 IST" finished-at="2021-06-29T18:38:38 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.LoginTest@31f9b85e]" name="tearDown" is-config="true" duration-ms="1615" started-at="2021-07-13T12:45:38 IST" finished-at="2021-07-13T12:45:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases.LoginTest -->
     </test> <!-- Login -->
+    <test name="Sections" duration-ms="10151" started-at="2021-07-13T12:45:40 IST" finished-at="2021-07-13T12:45:50 IST">
+      <class name="TestCases.SectionsVerification">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.SectionsVerification@37f1104d]" name="setUp" is-config="true" duration-ms="3198" started-at="2021-07-13T12:45:40 IST" finished-at="2021-07-13T12:45:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="openPage()[pri:0, instance:TestCases.SectionsVerification@37f1104d]" name="openPage" is-config="true" duration-ms="4551" started-at="2021-07-13T12:45:43 IST" finished-at="2021-07-13T12:45:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPage -->
+        <test-method status="PASS" signature="verifySectionHeadings()[pri:0, instance:TestCases.SectionsVerification@37f1104d]" name="verifySectionHeadings" duration-ms="1470" started-at="2021-07-13T12:45:47 IST" finished-at="2021-07-13T12:45:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySectionHeadings -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.SectionsVerification@37f1104d]" name="tearDown" is-config="true" duration-ms="927" started-at="2021-07-13T12:45:49 IST" finished-at="2021-07-13T12:45:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.SectionsVerification -->
+    </test> <!-- Sections -->
   </suite> <!-- Appsierra session -->
 </testng-results>
