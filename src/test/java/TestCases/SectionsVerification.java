@@ -25,7 +25,8 @@ public class SectionsVerification extends TestBase {
 
 		HomePage homepage = new HomePage(driver);
 		homepage.printAllHeadings();
-
+		System.out.println("--------------------->>>>>>>>JUST A DEMO POV");
+			
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(10))
 				.pollingEvery(Duration.ofSeconds(10)).ignoring(Exception.class);
 		wait.until(null);
