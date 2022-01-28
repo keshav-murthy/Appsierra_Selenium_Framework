@@ -33,6 +33,13 @@ public class LoginPage extends BasePage {
 
 		wait.forElementToBeVisible(alert);
 		Assert.assertTrue(alert.isDisplayed());
+		lOGGER.info("Checking whether alert is popping-up upon succesfull login");
+	}
+
+	public void verifyLoginFailure() {
+
+		wait.forElementToBeVisible(alert);
+		Assert.assertTrue(alert.isDisplayed());
 		Assert.assertFalse(alert.isDisplayed());
 		lOGGER.info("Checking whether alert is popping-up upon succesfull login");
 	}

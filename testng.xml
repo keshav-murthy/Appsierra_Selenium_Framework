@@ -11,4 +11,10 @@
 			<class name="TestCases.LoginTest" />
 		</classes>
 	</test>
+	
+	<test name="Sections">
+		<classes>
+			<class name="TestCases.SectionsVerification" />
+		</classes>
+	</test>
 </suite>

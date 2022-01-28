@@ -8,7 +8,9 @@ import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -16,6 +18,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import listener.ListenerTest;
 import listener.MyScreenRecorder;
 
@@ -56,12 +59,29 @@ public class TestBase {
 			}
 		} else {
 
-			// If we're not using a hub, then attempt to instantiate a local chrome driver.
-			String driverPath = System.getProperty("webdriver.chrome.driver");
-			if (driverPath == null) {
-				throw new RuntimeException("You must specify either a hubUrl or a webdriver.chrome.driver path.");
+			// If we're not using a hub, then attempt to instantiate a local chrome or
+			// firefox or IE driver.
+
+			String browserName = System.getProperty("browserName");
+			if (browserName == null) {
+				throw new RuntimeException("You must specify a browserName");
 			}
-			return new ChromeDriver((ChromeOptions) getOptions("chrome"));
+
+			if (browserName.equals("chrome")) {
+				WebDriverManager.chromedriver().setup();
+				driver = new ChromeDriver((ChromeOptions) getOptions(browserName));
+			}
+
+			if (browserName.equals("firefox")) {
+				WebDriverManager.firefoxdriver().setup();
+				driver = new FirefoxDriver((FirefoxOptions) getOptions(browserName));
+			}
+
+			if (browserName.equals("internetexplorer")) {
+				WebDriverManager.iedriver().setup();
+				driver = new InternetExplorerDriver((InternetExplorerOptions) getOptions("internet explorer"));
+			}
+			return driver;
 		}
 	}
 
@@ -74,7 +94,7 @@ public class TestBase {
 			return options.merge(cap);
 		}
 
-		if (browserName.equals("internetExplorer")) {
+		if (browserName.equals("internet explorer")) {
 			InternetExplorerOptions options = new InternetExplorerOptions();
 			return options.merge(cap);
 		}
@@ -83,8 +103,8 @@ public class TestBase {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("disable-gpu");
 			options.addArguments("--disable-print-preview");
-//            options.addArguments("headless");
-//            options.addArguments("window-size=1200x600");
+            options.addArguments("headless");
+            options.addArguments("window-size=1200x600");
 			return options.merge(cap);
 		}
 
