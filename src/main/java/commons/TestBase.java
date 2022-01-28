@@ -59,13 +59,15 @@ public class TestBase {
 			}
 		} else {
 
-			// If we're not using a hub, then attempt to instantiate a local chrome or firefox or IE driver.
+			// If we're not using a hub, then attempt to instantiate a local chrome or
+			// firefox or IE driver.
 
 			String browserName = System.getProperty("browserName");
 			if (browserName == null) {
 				throw new RuntimeException("You must specify a browserName");
 			}
-			if (browserName.equals("chrome")){
+
+			if (browserName.equals("chrome")) {
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver((ChromeOptions) getOptions(browserName));
 			}

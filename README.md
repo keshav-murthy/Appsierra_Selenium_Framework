@@ -14,7 +14,7 @@ To run tests against your host Chrome Browser you'll need to download the latest
 [Chrome Driver](https://chromedriver.chromium.org/downloads) for your platform. If you're running on Linux or 
 Mac, ensure the Driver is executable.  
 
-Specify the Chrome Dri`ver when running the test.
+Specify the Chrome Driver when running the test.
 
 ```shell script
 mvn test -DconfigPath=./env/prod.properties -Dwebdriver.chrome.driver=/path/to/chromedriver -DGroups=GroupName
