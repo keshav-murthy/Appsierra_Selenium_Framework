@@ -103,8 +103,8 @@ public class TestBase {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("disable-gpu");
 			options.addArguments("--disable-print-preview");
-//            options.addArguments("headless");
-//            options.addArguments("window-size=1200x600");
+            options.addArguments("headless");
+            options.addArguments("window-size=1200x600");
 			return options.merge(cap);
 		}
 

@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13114" started-at="2022-01-28T17:39:53 IST" finished-at="2022-01-28T17:40:06 IST">
+  <suite name="Default suite" duration-ms="12582" started-at="2022-01-28T17:44:18 IST" finished-at="2022-01-28T17:44:31 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13114" started-at="2022-01-28T17:39:53 IST" finished-at="2022-01-28T17:40:06 IST">
+    <test name="Default test" duration-ms="12582" started-at="2022-01-28T17:44:18 IST" finished-at="2022-01-28T17:44:31 IST">
       <class name="TestCases.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.LoginTest@442675e1]" name="setUp" is-config="true" duration-ms="3426" started-at="2022-01-28T17:39:53 IST" finished-at="2022-01-28T17:39:57 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestCases.LoginTest@442675e1]" name="setUp" is-config="true" duration-ms="5192" started-at="2022-01-28T17:44:19 IST" finished-at="2022-01-28T17:44:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="openPage()[pri:0, instance:TestCases.LoginTest@442675e1]" name="openPage" is-config="true" duration-ms="4332" started-at="2022-01-28T17:39:57 IST" finished-at="2022-01-28T17:40:01 IST">
+        <test-method status="PASS" signature="openPage()[pri:0, instance:TestCases.LoginTest@442675e1]" name="openPage" is-config="true" duration-ms="2721" started-at="2022-01-28T17:44:24 IST" finished-at="2022-01-28T17:44:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method status="PASS" signature="verifyLoginWithValidCred()[pri:0, instance:TestCases.LoginTest@442675e1]" name="verifyLoginWithValidCred" duration-ms="4233" started-at="2022-01-28T17:40:01 IST" finished-at="2022-01-28T17:40:05 IST">
+        <test-method status="PASS" signature="verifyLoginWithValidCred()[pri:0, instance:TestCases.LoginTest@442675e1]" name="verifyLoginWithValidCred" duration-ms="3061" started-at="2022-01-28T17:44:26 IST" finished-at="2022-01-28T17:44:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCred -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.LoginTest@442675e1]" name="tearDown" is-config="true" duration-ms="1055" started-at="2022-01-28T17:40:05 IST" finished-at="2022-01-28T17:40:06 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.LoginTest@442675e1]" name="tearDown" is-config="true" duration-ms="1540" started-at="2022-01-28T17:44:30 IST" finished-at="2022-01-28T17:44:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
